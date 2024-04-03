@@ -134,3 +134,4 @@ E:\PROJETOS-C#\BloggieMVC\Bloggie\Bloggie.WEB\obj\Debug\net8.0\refint\Bloggie.WE
 E:\PROJETOS-C#\BloggieMVC\Bloggie\Bloggie.WEB\obj\Debug\net8.0\Bloggie.WEB.pdb
 E:\PROJETOS-C#\BloggieMVC\Bloggie\Bloggie.WEB\obj\Debug\net8.0\Bloggie.WEB.genruntimeconfig.cache
 E:\PROJETOS-C#\BloggieMVC\Bloggie\Bloggie.WEB\obj\Debug\net8.0\ref\Bloggie.WEB.dll
+E:\PROJETOS-C#\BloggieMVC\Bloggie\Bloggie.WEB\obj\Debug\net8.0\Bloggie.WEB.sourcelink.json
