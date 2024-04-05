@@ -1,2 +1,2 @@
 # Blog-MVC
- ADICIONANDO  REPOSITORY PATTERN
+ Blog de um curso da udemy utilzando asp.net MVC
