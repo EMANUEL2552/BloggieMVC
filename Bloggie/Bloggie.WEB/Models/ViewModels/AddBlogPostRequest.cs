@@ -27,7 +27,7 @@ namespace Bloggie.WEB.Models.ViewModels
 
 		//colect Tag
 
-		public string SelectedTag { get; set; }
+		public string[] SelectedTags { get; set; } = Array.Empty<string>();
 
 	}
 }

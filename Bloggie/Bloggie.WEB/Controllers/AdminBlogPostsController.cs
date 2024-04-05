@@ -26,5 +26,11 @@ namespace Bloggie.WEB.Controllers
             };
            return View(model);
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Add(AddBlogPostRequest addBlogPostRequest)
+        {
+            return RedirectToAction("Add");
+        }
     }
 }
