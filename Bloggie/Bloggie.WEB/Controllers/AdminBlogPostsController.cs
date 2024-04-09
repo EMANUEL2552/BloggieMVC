@@ -78,5 +78,50 @@ namespace Bloggie.WEB.Controllers
 
             return View(blogPosts);
         }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(Guid id)
+        {
+            //Retrieve the result from the repository
+           var blogpost =  await blogPostRepository.GetAsync(id);
+            var tagsDomainModel = await tagRepository.GetAllAsync();
+
+            if (blogpost != null) 
+            {
+
+				// map the domain model into the view model
+				var model = new EditBlogPostRequest
+				{
+					Id = blogpost.Id,
+					Heading = blogpost.Heading,
+					PageTitle = blogpost.PageTitle,
+					Content = blogpost.Content,
+					Author = blogpost.Author,
+					FeaturedImageUrl = blogpost.FeaturedImageUrl,
+					UrlHandle = blogpost.UrlHandle,
+					ShortDescription = blogpost.ShortDescription,
+					PublishDate = blogpost.PublishDate,
+					Visible = blogpost.Visible,
+					Tags = tagsDomainModel.Select(x => new SelectListItem
+					{
+						Text = x.Name,
+						Value = x.Id.ToString()
+					}),
+					SelectedTags = blogpost.Tags.Select(x => x.Id.ToString()).ToArray()
+
+
+
+				};
+
+                return View(model);
+
+			}
+
+            
+
+            //pass data to view
+            return View(null);
+
+        }
     }
 }
