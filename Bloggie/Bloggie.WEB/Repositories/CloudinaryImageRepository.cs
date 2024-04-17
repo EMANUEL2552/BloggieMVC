@@ -32,11 +32,11 @@ namespace Bloggie.WEB.Repositories
 				
 			};
 
-			var uploadResult = client.UploadAsync(uploadParams);
+			var uploadResult = await client.UploadAsync(uploadParams);
 
-			if (uploadResult != null )
+			if (uploadResult != null && uploadResult.StatusCode == System.Net.HttpStatusCode.OK )
 			{
-			   return uploadResult.Status.ToString();
+			   return uploadResult.SecureUrl.ToString();
 			}
 
 			return null;
