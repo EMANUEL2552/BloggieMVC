@@ -41,7 +41,7 @@
             <label class="col-form-label">Feature Image Upload</label>
             <input type="file" id="featuredImageUpload" class="form-control" />
 
-            <img src="" id="featuredImageDisplay" style="display:none;width:360px" />
+            <img src="" id="featuredImageDisplay" style="display:none; width:360px;" />
 
         </div>
 
@@ -114,7 +114,11 @@
 
 @section Scripts{
     <script>
-        var editor = new FroalaEditor('#content');
+        var editor = new FroalaEditor('#content', {
+
+            imageUploadURL: '/api/images'
+
+        });
 
         const featuredUploadElement = document.getElementById('featuredImageUpload');
         const featuredImageUrlElement = document.getElementById('featuredImageUrl');
