@@ -8,7 +8,7 @@ namespace Bloggie.WEB.Repositories
 
         Task<BlogPost?> GetAsync(Guid id);
 
-        
+        Task<BlogPost?> GetByUrlHandle(string urlHandle);
 
         Task<BlogPost> AddAsync(BlogPost blogPost);
 

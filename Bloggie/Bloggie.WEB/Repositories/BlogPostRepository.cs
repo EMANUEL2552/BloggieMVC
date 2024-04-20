@@ -46,7 +46,13 @@ namespace Bloggie.WEB.Repositories
            
         }
 
-        public Task<IEnumerable<BlogPost>> GetPostsAsync()
+		public async Task<BlogPost?> GetByUrlHandle(string urlHandle)
+		{
+			return await bloggieDbContext.BlogPosts.Include(x => x.Tags).
+                FirstOrDefaultAsync(x => x.UrlHandle == urlHandle);
+		}
+
+		public Task<IEnumerable<BlogPost>> GetPostsAsync()
         {
             throw new NotImplementedException();
         }
