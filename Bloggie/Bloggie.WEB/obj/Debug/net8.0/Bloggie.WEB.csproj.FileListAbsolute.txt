@@ -137,3 +137,9 @@ E:\PROJETOS-C#\BloggieMVC\Bloggie\Bloggie.WEB\obj\Debug\net8.0\ref\Bloggie.WEB.d
 E:\PROJETOS-C#\BloggieMVC\Bloggie\Bloggie.WEB\obj\Debug\net8.0\Bloggie.WEB.sourcelink.json
 E:\PROJETOS-C#\BloggieMVC\Bloggie\Bloggie.WEB\bin\Debug\net8.0\CloudinaryDotNet.dll
 E:\PROJETOS-C#\BloggieMVC\Bloggie\Bloggie.WEB\bin\Debug\net8.0\Newtonsoft.Json.dll
+E:\PROJETOS-C#\BloggieMVC\Bloggie\Bloggie.WEB\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\PROJETOS-C#\BloggieMVC\Bloggie\Bloggie.WEB\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\PROJETOS-C#\BloggieMVC\Bloggie\Bloggie.WEB\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\PROJETOS-C#\BloggieMVC\Bloggie\Bloggie.WEB\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+E:\PROJETOS-C#\BloggieMVC\Bloggie\Bloggie.WEB\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+E:\PROJETOS-C#\BloggieMVC\Bloggie\Bloggie.WEB\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
