@@ -2,6 +2,7 @@
 using Bloggie.WEB.Models.Domain;
 using Bloggie.WEB.Models.ViewModels;
 using Bloggie.WEB.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,7 +18,7 @@ namespace Bloggie.WEB.Controllers
            this.tagRepository = tagRepository;
         }
 
-
+		[Authorize(Roles ="Admin")]
         [HttpGet]
 		public ActionResult Add()
 		{
